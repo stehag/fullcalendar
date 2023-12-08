@@ -3,6 +3,9 @@
   "name": "@fullcalendar/standard-features",
   "description": "Full-sized drag & drop event calendar in JavaScript",
   "version": "0.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
   "keywords": [
     "calendar",
     "event",
