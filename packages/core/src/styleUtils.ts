@@ -10,8 +10,8 @@ export function injectStyles(styleText: string): void {
 }
 
 export function ensureElHasStyles(el: HTMLElement): void {
-  if (el.isConnected) {
-    registerStylesRoot(el.getRootNode() as ParentNode)
+  if (el.isConnected && typeof el.getRootNode === 'function') {
+    registerStylesRoot(el.getRootNode() as ParentNode);
   }
 }
 
